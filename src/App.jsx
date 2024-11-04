@@ -5,7 +5,6 @@ import './style.css';
 import button from './assets/box.png';
 import textbox from './assets/chatbox_white.png';
 
-
 export default function App() {
   const handleClick = () => {
     console.log('clicked');
@@ -39,7 +38,10 @@ export default function App() {
         <div className="background-section">
           <div className="background-animation">
             <div className="chatbox">
-              <div className="chatbox-text">Hi! I'm Lily </div>
+              <div className="chatbox-text">
+                <img src={textbox} class="background-img" alt="textbox" />
+                <h1 className="line anim-typewriter">Hi! I'm Lily</h1>
+              </div>
               <Animation />
             </div>
           </div>

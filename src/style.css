@@ -20,7 +20,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    /*background-color: #ece5dc;*/
+    letter-spacing: 0.15em;
 }
 
 .header {
@@ -83,6 +83,7 @@ button:hover {
     width: 100px;
     height: 40px;
     position: relative;
+    letter-spacing: 0.05em;
 }
 
 .about img, .projects img {
@@ -105,37 +106,6 @@ button:hover {
 .about {
     margin-right: 40px;
 }
-
-/*
-.background-section img{
-    object-fit: cover;
-    width: 100%;
-    background-size: cover;
-    padding: 0;
-}
-
-.background-section {
-    display: flex;
-}
-
-.background-contianer {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.animation {
-    display: flex;
-    width: 600px;
-    position: absolute;
-    left: 38%;
-    transform: translate(-50%, 50%);
-}
-
-*/
 
 .background-container {
     display: flex;
@@ -172,19 +142,21 @@ button:hover {
     border: 2px solid green;
     flex-direction: row;
     width: 100%;
-    height: 70%;
+    height: 80%;
     position: relative;
+    justify-content: center;
 
 }
 
 .chatbox-text {
     display: flex;
+    position: relative;
     border: 2px solid blue;
-    background-image: url('./assets/chatbox_white.png');
-    background-repeat: no-repeat;
-    background-position: right 30%;
-    width: 100%;
-    object-fit: contain;
+    margin-top: 5%;
+    width: 494px;
+    height: 84px;
+    background-attachment: scroll;
+    justify-content: center;
 }
 
 .animation {
@@ -195,5 +167,44 @@ button:hover {
     height: 300px;
     flex-shrink: 0;
     object-fit: contain;
+    align-self: flex-end;
+}
 
+.background-img {
+    position: absolute;
+    width: 100%;
+    
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+
+.line{
+    
+    position: absolute;
+    top: 50%;  
+    width: inline-block;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    z-index: 2;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+             blinkTextCursor 700ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 11ch;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #cad598;}
+  to{border-right-color: transparent;}
 }
