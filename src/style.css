@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pixelify+Sans:wght@400..700&display=swap');
+
+.pixelify-sans{
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    /*background-color: #ece5dc;*/
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+
+.nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    height: 40px;
+}
+
+button {
+    display:flex;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.about:hover {
+    background-color: #dbebeb;
+    border-radius: 10px;
+}
+
+.projects:hover {
+    background-color: #cad598;
+    border-radius: 10px;
+}
+
+.about, .projects {
+    width: 100px;
+    height: 40px;
+    position: relative;
+}
+
+.about img, .projects img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.button-text {
+    font-family: 'Pixelify Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.about {
+    margin-right: 40px;
+}
+
+/*
+.background-section img{
+    object-fit: cover;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+}
+
+.background-section {
+    display: flex;
+}
+
+.background-contianer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.animation {
+    display: flex;
+    width: 600px;
+    position: absolute;
+    left: 38%;
+    transform: translate(-50%, 50%);
+}
+
+*/
+
+.background-container {
+    display: flex;
+    border: 4px solid #000;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    justify-content: center;
+    background-image: url('./assets/background.jpg');
+}
+
+.background-section {
+    display: flex;
+    border: 5px solid red;
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    justify-content: end;
+}
+
+#background {
+    background-image: url(background.jpg);
+}
