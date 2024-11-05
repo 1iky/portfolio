@@ -5,6 +5,11 @@ import './style.css';
 import button from './assets/box.png';
 import textbox from './assets/chatbox_white.png';
 import lily from './assets/lily.png';
+import contacts from './assets/contacts.png';
+import caret from './assets/caret-right.png';
+import envelope from './assets/envelope.png';
+import github from './assets/github.png';
+import linkedin from './assets/linkedin.png';
 
 export default function App() {
   const handleClick = () => {
@@ -52,11 +57,17 @@ export default function App() {
               <Animation />
             </div>
           </div>
+          <div className="contact-container">
+            <img src={caret} className="caret" alt="caret" />
+            <button className="contact-button button1" onClick={handleClick}></button>
+            <button className="contact-button button2" onClick={handleClick}></button>
+            <button className="contact-button button3" onClick={handleClick}></button>
+          </div>
           <div className="about-content"> 
             <h2>About Me</h2>
             <div className='about-container'>
               <img src={lily} className='about-item' alt="Picture of Lily" />
-              <div className='about-item'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni atque ipsam, nemo error earum eius nostrum accusamus nisi enim est dolores eos odio perferendis, possimus et dolore nam aut commodi!</div>
+              <div className='about-item'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni atque ipsam, nemo error earum eius nostrum accusamus nisi enim est dolores eos odio perferendis, possimus et dolore nam aut commodi! ▶</div>
             </div>
           </div>
         </div>
