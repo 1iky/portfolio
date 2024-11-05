@@ -67,7 +67,7 @@ export default function App() {
             <h2>About Me</h2>
             <div className='about-container'>
               <img src={lily} className='about-item' alt="Picture of Lily" />
-              <div className='about-item'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni atque ipsam, nemo error earum eius nostrum accusamus nisi enim est dolores eos odio perferendis, possimus et dolore nam aut commodi! ▶</div>
+              <p className='about-item'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni atque ipsam, nemo error earum eius nostrum accusamus nisi enim est dolores eos odio perferendis, possimus et dolore nam aut commodi! ▶</p>
             </div>
           </div>
         </div>

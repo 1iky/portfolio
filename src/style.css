@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pixelify+Sans:wght@400..700&display=swap');
 
 @font-face {
-    font-family: 'DePixelSchmal';
-    src: url('./fonts/DePixelSchmal.ttf') format('truetype');
+    font-family: 'PixelOperator';
+    src: url('./fonts/PixelOperator.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'PixelOperator8';
+    src: url('./fonts/PixelOperator8.ttf') format('truetype');
 }
 
 
@@ -23,7 +28,7 @@
 }
 
 body {
-    font-family: 'DePixelSchmal', sans-serif;
+    font-family: 'PixelOperator', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
@@ -49,7 +54,7 @@ body {
 
 .name {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .links {
@@ -101,7 +106,8 @@ button:hover {
 }
 
 .button-text {
-    font-family: 'DePixelSchmal', sans-serif;
+    font-family: 'PixelOperator', sans-serif;
+    font-size: 1.2rem;
     position: absolute;
     align-self: center;
     top: 45%;
@@ -143,9 +149,10 @@ button:hover {
 .contact-container {
     display: flex;
     width: 100%;
-    height: 84px;
+
     background-image: url('./assets/contact3.png');
     background-repeat: no-repeat; 
+    background-size: contain;
     align-items: center;
     gap: 25px;
     padding: 1rem;
@@ -192,7 +199,7 @@ button:hover {
 
 .about-content {
     display: flex;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     height: 50%;
     background-image: url('./assets/aboutme.png');
     background-repeat: no-repeat;
@@ -203,8 +210,13 @@ button:hover {
     flex-direction: column;
     padding: 5rem;
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 6.5rem;
 
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    letter-spacing: 0.10em;
 }
 
 
@@ -240,6 +252,15 @@ button:hover {
 .about-item:last-child {
     flex: 2;
 }
+
+.about-container p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 
 .background-animation {
     display: flex;
@@ -294,7 +315,7 @@ button:hover {
 .text {
     display: inline-block;
     vertical-align: bottom;
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: 600;
     align-self: center;
     z-index: 3;
@@ -303,7 +324,7 @@ button:hover {
 .text > span {
     display: grid;
     overflow: hidden;
-    height: 1.6rem;
+    height: 3.2rem;
   }
   
 .text span span {
