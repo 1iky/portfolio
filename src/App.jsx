@@ -51,8 +51,12 @@ export default function App() {
               <Animation />
             </div>
           </div>
-          <div className="about-content">
-            <h1>About Me</h1>
+          <div className="about-content"> 
+            <h2>About Me</h2>
+            <div className='about-container'>
+              <div className='about-item'>Item 1</div>
+              <div className='about-item'>Item 2</div>
+            </div>
           </div>
         </div>
       </div>
