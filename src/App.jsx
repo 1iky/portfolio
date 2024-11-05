@@ -4,6 +4,7 @@ import Animation from './Animation.jsx';
 import './style.css';
 import button from './assets/box.png';
 import textbox from './assets/chatbox_white.png';
+import lily from './assets/lily.png';
 
 export default function App() {
   const handleClick = () => {
@@ -54,8 +55,8 @@ export default function App() {
           <div className="about-content"> 
             <h2>About Me</h2>
             <div className='about-container'>
-              <div className='about-item'>Item 1</div>
-              <div className='about-item'>Item 2</div>
+              <img src={lily} className='about-item' alt="Picture of Lily" />
+              <div className='about-item'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni atque ipsam, nemo error earum eius nostrum accusamus nisi enim est dolores eos odio perferendis, possimus et dolore nam aut commodi!</div>
             </div>
           </div>
         </div>
