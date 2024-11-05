@@ -130,19 +130,36 @@ button:hover {
 
 .background-section {
     display: flex;
-    border: 5px solid red;
+    border: 5px solid #ececec;
     width: 60%;
     position: relative;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+
+}
+
+.about-content {
+    display: flex;
+    border: 2px solid red;
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+    padding-left: 50px;
+    background-image: url('./assets/aboutme.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 
 .background-animation {
     display: flex;
     border: 2px solid orange;
-    height: 50%;
     width: 100%;
-    position: absolute;
+    height: 50%;
+    /*position: absolute;*/
     justify-content: flex-end;
 }
 
@@ -234,4 +251,5 @@ button:hover {
 @keyframes m{
     100% {transform:translateY(-300%)}
 }
-  
+
+
