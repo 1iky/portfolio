@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import React from 'react';
 import Animation from './Animation.jsx';
 import './style.css';
@@ -10,7 +10,7 @@ export default function App() {
     console.log('clicked');
   };
 
-
+ 
   return (
     <>
       <div className="header">
@@ -39,8 +39,14 @@ export default function App() {
           <div className="background-animation">
             <div className="chatbox">
               <div className="chatbox-text">
-                <img src={textbox} class="background-img" alt="textbox" />
-                <h1 className="line anim-typewriter">Hi! I'm Lily</h1>
+              <img src={textbox} class="background-img" alt="textbox" />
+                <span class="text">
+                  <span>
+                    <span>Hi! I'm Lily.</span>
+                    <span>I'm a computer science student!</span>
+                    <span>I'm a software engineer!</span>
+                  </span>
+                </span>
               </div>
               <Animation />
             </div>

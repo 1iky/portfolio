@@ -1,6 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pixelify+Sans:wght@400..700&display=swap');
 
+@font-face {
+    font-family: 'DePixelSchmal';
+    src: url('./fonts/DePixelSchmal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .pixelify-sans{
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
@@ -15,12 +23,12 @@
 }
 
 body {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'DePixelSchmal', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.10em;
 }
 
 .header {
@@ -41,7 +49,7 @@ body {
 
 .name {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .links {
@@ -66,7 +74,7 @@ button {
 }
 
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .about:hover {
@@ -93,13 +101,14 @@ button:hover {
 }
 
 .button-text {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'DePixelSchmal', sans-serif;
     position: absolute;
-    top: 50%;
+    align-self: center;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
-    font-weight: 600;
+    font-weight: 300;
     pointer-events: none;
 }
 
@@ -152,7 +161,8 @@ button:hover {
     display: flex;
     position: relative;
     border: 2px solid blue;
-    margin-top: 5%;
+    font-size: 10px;
+    margin-top: 8%;
     width: 494px;
     height: 84px;
     background-attachment: scroll;
@@ -161,7 +171,7 @@ button:hover {
 
 .animation {
     display: flex;
-    border: 5px solid purple;
+    border: 5px solid purple; 
     position: relative;
     width: 300px;
     height: 300px;
@@ -179,32 +189,49 @@ button:hover {
 }
 
 
-
-.line{
-    
-    position: absolute;
-    top: 50%;  
-    width: inline-block;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
+/*typing animation*/
+.text {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 18px;
+    font-weight: 600;
+    align-self: center;
+    z-index: 3;
+  }
+  
+.text > span {
+    display: grid;
     overflow: hidden;
-    transform: translateY(-50%);    
-    z-index: 2;
+    height: 1.6rem;
+  }
+  
+.text span span {
+    width: 0%;
+    max-width: max-content;
+    overflow: hidden;
+    height: inherit;
+    word-break: break-all;
+    animation:
+      c 1s infinite steps(1),  
+      t 4s linear infinite alternate,
+      m 24s steps(3) infinite;
 }
 
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 2s steps(44) 1s 1 normal both,
-             blinkTextCursor 700ms steps(44) infinite normal;
+.text span span:before {
+    content: " ";
+    display: inline-block;
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 11ch;}
+  
+@keyframes t{
+    90%,100% {width:100%}
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: #cad598;}
-  to{border-right-color: transparent;}
+  
+@keyframes c{
+    0%,100%{box-shadow:5px 0 0 #0000}
+    50%    {box-shadow:2px 0 0 #cad598 }
 }
+  
+@keyframes m{
+    100% {transform:translateY(-300%)}
+}
+  
