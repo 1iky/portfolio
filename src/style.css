@@ -117,9 +117,11 @@ button:hover {
 
 .background-container {
     display: flex;
-    border: 4px solid #000;
+    /*border: 4px solid #000;*/
+    border-bottom: 2px solid #121212;
+    border-top: 2px solid #121212;
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     overflow: hidden;
     position: relative;
     background-size: cover;
@@ -142,7 +144,7 @@ button:hover {
 .contact-container {
     display: flex;
     width: 100%;
-    border: 5px solid #121212;
+    /*border: 5px solid #121212;*/
     background-image: url('./assets/contact4.png');
     background-repeat: no-repeat; 
     background-size: contain;
@@ -202,9 +204,11 @@ button:hover {
     width: 100%;
     
     flex-direction: column;
-    padding: 5rem;
+    padding: 4rem;
     padding-top: 2rem;
     padding-bottom: 6.5rem;
+    background-image: contain;
+    margin-bottom: 10px;
 
 }
 
@@ -248,7 +252,7 @@ button:hover {
 }
 
 .about-container p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     padding: 1rem;
     padding-top: 0;
@@ -258,14 +262,14 @@ button:hover {
 
 .background-animation {
     display: flex;
-    border: 2px solid orange;
+    /*border: 2px solid orange;*/
     width: 100%;
     height: 40%;
 }
 
 .chatbox {
     display: flex;
-    border: 2px solid green;
+    /*border: 2px solid green; */
     flex-direction: row;
     width: 100%;
     position: relative;
@@ -278,16 +282,17 @@ button:hover {
     position: relative;
     border: 2px solid blue; 
     font-size: 10px;
-    margin-top: 8%;
+    margin-top: 12%;
     width: 494px;
     height: 84px;
     background-attachment: scroll;
+    background-size: cover;
     justify-content: center;
 }
 
 .animation {
     display: flex;
-    border: 5px solid purple; 
+    /*border: 5px solid purple; */
     position: relative;
     width: 300px;
     height: 300px;
@@ -351,6 +356,19 @@ button:hover {
     100% {transform:translateY(-300%)}
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 100px;
+}
+
+.footer-text {
+    width: 60%;
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 /* screen size breakpoints */
 
@@ -361,11 +379,6 @@ button:hover {
 
     .button-text {
         font-size: 2rem;
-    }
-
-    .animation {
-        /*need to contain animation to make bigger*/
-
     }
 
    .contact-container {
@@ -394,6 +407,8 @@ button:hover {
         padding-left: 5rem;
         padding-right: 5rem;
         padding-bottom: 8rem;
+        margin-bottom: 10px;
+
     }
 
     .about-content h2 {
@@ -405,15 +420,79 @@ button:hover {
         font-size: 2.5rem;
     }
 
+    .chatbox-text {
+        width: 600px;
+        height: 100px;
+        margin-top: 12%;
+    }
 
-    /*increase size of chat bubble
-    increase text size of chat bubble
-    move chat bubble*/
+    .animation {
+        transform: scale(1.2);
+    }
+
+    .text {
+        font-size: 2.5rem;
+        align-items: center;
+    }
+    .footer-text {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width:1850px) {
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .button-text {
+        font-size: 2rem;
+    }
+
+   .contact-container {
+        height: 100px;
+        gap: 30px;
+   }
+
+   .contact-container img {
+        width: 50px;
+        height: 50px;
+   }
+
+   .contact-button {
+        width: 50px;
+        height: 50px;
+   }
+
+    .about,
+    .projects {
+        width: 150px;
+        height: 60px;
+    }
+
+    .about-content {
+        padding: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-bottom: 8rem;
+        margin-bottom: 10px;
+
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+    }
+
+
+    .about-container p {
+        font-size: 2rem;
+    }
+
     .chatbox-text {
         width: 600px;
         height: 100px;
         margin-top: 10%;
-        padding-bottom: 10px;
+        padding-bottom: 10px; /*actual text*/
     }
 
     .animation {
@@ -425,13 +504,72 @@ button:hover {
         align-items: center;
     }
 
+    .footer-text {
+        font-size: 1.5rem;
+    }
+}
+    
+
+@media (max-width: 1500px) {
+    .chatbox-text {
+        transform: scale(1);
+        margin-top: 13%;
+
+    }
+
+     .animation {
+        transform: scale(1);
+        align-self: flex-end;
+
+     }
+    
+     .text {
+          font-size: 2rem;
+     }
+     
+     .contact-container {
+        height: 70px;
+        gap: 25px;
+     }
+     
+     .contact-button {
+        width: 30px;
+        height: 30px;
+     }
+
+     .contact-container img {
+        width: 35px;
+        height: 35px;
+     }
+
+    .about-content{
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+
+    .chatbox-text {
+
+        margin-top: 10%;
+    }
+
+     .about-content {
+         padding: 1rem;
+         padding-left: 3rem;
+         padding-right: 3rem;
+         padding-bottom: 5rem;
+     }
+ 
+     .about-content h2 {
+         font-size: 2rem;
+     }
+ 
+ 
+     .about-container p {
+         font-size: 1.5rem;
+     }
 }
 
-
-
-@media (max-width: 1280px) {
-
-}
 
 @media (max-width: 1024px) {
     
