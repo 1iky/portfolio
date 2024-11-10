@@ -6,6 +6,7 @@ import button from './assets/box.png';
 import textbox from './assets/chatbox_white.png';
 import lily from './assets/lily.png';
 import caret from './assets/caret-right.png';
+import hamburger from './assets/hamburger.png';
 
 
 export default function App() {
@@ -13,13 +14,31 @@ export default function App() {
     console.log('clicked');
   };
 
- 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <div className="header">
         <div className="nav">
           <div className='name'>Lily So</div>
-          <div className='links'>
+          <div className="mobile-nav">
+            {/* Hamburger Menu Button */}
+            <button className="hamburger-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              <img src={hamburger} alt="menu"/>
+            </button>
+
+            {/* Mobile Menu Dropdown */}
+            <div className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`}>
+              <button className="about" onClick={handleClick}>
+                <span className="button-text">about</span>
+              </button>
+              <button className="projects" onClick={handleClick}>
+                <span className="button-text">projects</span>
+              </button>
+            </div>
+        </div>
+          {/* desktop menu links*/}
+          <div className={'links'}>
             <button className='about' onClick={handleClick}>
               <img
                 src={button}
@@ -47,7 +66,7 @@ export default function App() {
                   <span>
                     <span>Hi! I'm Lily.</span>
                     <span>I'm a computer science student!</span>
-                    <span>I'm a software engineer!</span>
+                    <span>ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</span>
                   </span>
                 </span>
               </div>
@@ -64,7 +83,7 @@ export default function App() {
             <h2>About Me</h2>
             <div className='about-container'>
               <img src={lily} className='about-item' alt="Picture " />
-              <p className='about-item'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni atque ipsam, nemo error earum eius nostrum accusamus nisi enim est dolores eos odio perferendis, possimus et dolore nam aut commodi! ✧</p>
+              <p className='about-item'>Hi! I'm Lily, a third year computer science student at Western University. I’m all about solving problems, learning new things, and applying what I know to real projects. Always looking for opportunities to grow and challenge myself! ✧</p>
             </div>
           </div>
         </div>

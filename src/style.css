@@ -44,7 +44,10 @@ button:hover {
 
 
 .header {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     background-color: #fff;
@@ -53,11 +56,50 @@ button:hover {
 
 .nav {
     display: flex;
-    width: 60%;
+    width: 70%;
     justify-content: space-between;
     flex-direction: row;
     align-items: flex-end;
 }
+
+.mobile-nav {
+    display: none;
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px #4f4f4f;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.dropdown-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.hamburger-button {
+    display: none;
+    align-self: center;
+}
+
+.hamburger-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
 
 .name {
     font-weight: bold;
@@ -66,6 +108,7 @@ button:hover {
 
 .links {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
@@ -87,7 +130,7 @@ button:hover {
 
 .about, .projects {
     width: 100px;
-    height: 40px;
+    height: 38px;
     position: relative;
     letter-spacing: 0.05em;
 }
@@ -132,13 +175,13 @@ button:hover {
 .background-section {
     display: flex;
     /*border: 5px solid #ececec;*/
-    width: 60%;
+    width: 70%;
     position: relative;
     flex-direction: column;
     align-items: center;
     height: 100%;
     gap: 5px;
-    
+    padding-bottom: 10px;
 }
 
 .contact-container {
@@ -202,18 +245,16 @@ button:hover {
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    
     flex-direction: column;
     padding: 4rem;
-    padding-top: 2rem;
-    padding-bottom: 6.5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 6rem;
     background-image: contain;
-    margin-bottom: 10px;
 
 }
 
 .about-content h2 {
-    font-size: 2rem;
+    font-size:2rem;
     letter-spacing: 0.10em;
 }
 
@@ -221,7 +262,7 @@ button:hover {
 .about-container {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 25px;
     width: 100%;
     height: 100%;
     /*border: 5px solid green;*/
@@ -252,7 +293,7 @@ button:hover {
 }
 
 .about-container p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     padding: 1rem;
     padding-top: 0;
@@ -282,7 +323,7 @@ button:hover {
     position: relative;
     border: 2px solid blue; 
     font-size: 10px;
-    margin-top: 12%;
+    margin-top: 8%;
     width: 494px;
     height: 84px;
     background-attachment: scroll;
@@ -298,7 +339,9 @@ button:hover {
     height: 300px;
     flex-shrink: 0;
     object-fit: contain;
-    align-self: flex-end;
+
+    margin-top: 5%;
+
 }
 
 .background-img {
@@ -361,13 +404,17 @@ button:hover {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer-text {
-    width: 60%;
-    font-size: 1rem;
+    width: 70%;
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #4f4f4f;
 }
 
 /* screen size breakpoints */
@@ -383,7 +430,7 @@ button:hover {
 
    .contact-container {
         height: 120px;
-        gap: 30px;
+        gap: 40px;
    }
 
    .contact-container img {
@@ -395,6 +442,12 @@ button:hover {
         width: 50px;
         height: 50px;
    }
+
+   .animation {
+        margin-top: 12%;
+    }
+    
+
 
     .about,
     .projects {
@@ -427,7 +480,7 @@ button:hover {
     }
 
     .animation {
-        transform: scale(1.2);
+        transform: scale(1.4);
     }
 
     .text {
@@ -435,7 +488,7 @@ button:hover {
         align-items: center;
     }
     .footer-text {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 }
 
@@ -475,7 +528,6 @@ button:hover {
         padding-left: 5rem;
         padding-right: 5rem;
         padding-bottom: 8rem;
-        margin-bottom: 10px;
 
     }
 
@@ -496,16 +548,22 @@ button:hover {
     }
 
     .animation {
-        transform: scale(1.2);
+        margin-top: 10%;
+        transform: scale(1.4);
     }
+    
 
     .text {
         font-size: 2.5rem;
+
         align-items: center;
     }
 
     .footer-text {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    .background-section {
+        padding-bottom: 10px;
     }
 }
     
@@ -519,7 +577,7 @@ button:hover {
 
      .animation {
         transform: scale(1);
-        align-self: flex-end;
+        margin-top: 8%;
 
      }
     
@@ -554,10 +612,10 @@ button:hover {
     }
 
      .about-content {
-         padding: 1rem;
-         padding-left: 3rem;
-         padding-right: 3rem;
-         padding-bottom: 5rem;
+         padding: 2rem;
+         padding-left: 4rem;
+         padding-right: 4rem;
+         padding-bottom: 6rem;
      }
  
      .about-content h2 {
@@ -568,18 +626,230 @@ button:hover {
      .about-container p {
          font-size: 1.5rem;
      }
+     .about-content {
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 5rem;
+    }
+
 }
 
 
+@media (max-width: 1250px) {
+    .nav {
+        width: 80%;
+    }
+    .background-section {
+        width: 80%;
+    }
+    .footer-text {
+        width: 80%;
+    }
+
+    .chatbox {
+        transform: scale(0.9);
+    }
+
+    .about-container p {
+        font-size: 1.2rem;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+    .background-section {
+        padding-bottom: 10px;
+    }
+    .about-content {
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 5rem;
+    }
+}
+
 @media (max-width: 1024px) {
+    .chatbox {
+        transform: scale(0.8);
+    }
+
+    .about-content {
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .footer-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .chatbox {
+        transform: scale(0.7);
+        width: auto;
+
+    }
+    .animation {
+        transform: scale(0.9);
+
+    }
+
+    .background-animation{
+        justify-content: center;
+    }
+
+    .contact-container {
+        height: 60px;
+        gap: 20px;
+    }
+
+    .contact-button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .about,
+    .projects {
+        width: 80px;
+        height: 31px;
+    }
+
+    .button-text {
+        font-size: 1rem;
+    }
+
+    .about{
+        margin-right: 20px;
+    }
+
+    .about-content {
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 5rem;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .name {
+        font-size: 1.5rem;
+    }
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+    .contact-container {
+        height: 60px;
+        gap: 20px;
+    }
     
+    .contact-button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .about-container p {
+        font-size: 1.1rem;
+    }
+
+    .about-content {
+        padding: 1rem;
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+        padding-bottom: 4.5rem;
+    }
+
+    .footer-text {
+        font-size: 1.2rem;
+    }
+
 }
 
 @media (max-width: 768px) {
+    .name {
+        font-size: 1.5rem;
+    }
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+    .contact-container {
+        height: 55px;
+        gap: 16px;
+    }
     
+    .contact-button {
+        width: 24px;
+        height: 24px;
+    }
+
+    .about-container p {
+        font-size: 1.1rem;
+    }
+
+    .about-container {
+        gap: 20px;
+    }
+
+    .links {
+        display:none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .hamburger-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .dropdown-menu button {
+        width: 100%;
+        margin: 5px 0;
+        text-align: left;
+    }
+
+    .about{
+        border-bottom: 1px solid #dfdfdf;
+    }
+
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .links {
+        display:none;
+    }
+
+
+    .about-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-container p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        padding: 1rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 4rem;
+    }
+
+    .about-container{
+        gap: 15px;
+    }
 
 }
 
