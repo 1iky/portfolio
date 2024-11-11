@@ -75,9 +75,15 @@ export default function App() {
           </div>
           <div className="contact-container">
             <img src={caret} className="caret" alt="caret" />
-            <button className="contact-button button1" onClick={handleClick}></button>
-            <button className="contact-button button2" onClick={handleClick}></button>
-            <button className="contact-button button3" onClick={handleClick}></button>
+            <a href="https://github.com/1iky" target="_blank">
+              <button className="contact-button button1" onClick={handleClick}></button>
+            </a>
+            <a href="mailto:lilyso6255@gmail.com">
+              <button className="contact-button button2" onClick={handleClick}></button>
+            </a>
+            <a href="https://www.linkedin.com/in/lily-so/"target="_blank">
+              <button className="contact-button button3" onClick={handleClick}></button>
+            </a>
           </div>
           <div className="about-content"> 
             <h2>About Me</h2>
