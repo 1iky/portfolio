@@ -78,7 +78,7 @@ button:hover {
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 3;
     min-width: 150px;
 }
 
@@ -321,7 +321,6 @@ button:hover {
 .chatbox-text {
     display: flex;
     position: relative;
-    border: 2px solid blue; 
     font-size: 10px;
     margin-top: 8%;
     width: 494px;
@@ -790,7 +789,7 @@ button:hover {
     }
 
     .about-container p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .about-container {
@@ -831,7 +830,6 @@ button:hover {
         display:none;
     }
 
-
     .about-content h2 {
         font-size: 1.2rem;
     }
@@ -851,14 +849,120 @@ button:hover {
         gap: 15px;
     }
 
-}
 
-@media (max-width: 320px) {
-    .name {
-        font-size: 1.5rem;
+    .chatbox {
+        transform: scale(0.6);
     }
 
-    .links {
-        display:none;
+    .contact-container {
+        height: 50px;
+        gap: 15px;
+    }
+
+    .contact-button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 665px) {
+
+
+    .about-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .name {
+        font-size: 1.1rem;
+    }
+
+    .about-container p {
+        font-size: 0.8rem;
+    }
+
+    .about-content {
+        padding: 1rem;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        padding-bottom: 3.2rem;
+    }
+
+    .contact-container {
+        height: 45px;
+        gap: 12px;
+    }
+
+    .contact-button {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contact-container img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+    }
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-container img {
+        display: none;
+    }
+
+    .about-container p {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 600px){
+    .chatbox {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .chatbox-text {
+        align-self: center;
+        margin-top:20%;
+    }
+
+    .text {
+        margin-top: 3%;
+    }
+
+    .animation {
+        align-self: center;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 320px){
+    .chatbox {
+        flex-direction: column;
+        transform: scale(0.5);
+        justify-content: center;
+    }
+
+    .chatbox-text {
+        align-self: center;
+        margin-top:20%;
+    }
+
+    .text {
+        margin-top: 3%;
     }
 }
