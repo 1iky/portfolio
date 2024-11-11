@@ -319,6 +319,7 @@ button:hover {
 }
 
 .chatbox-text {
+    border: 2px solid #121212;
     display: flex;
     position: relative;
     font-size: 10px;
@@ -869,25 +870,21 @@ button:hover {
         height: 30px;
     }
 
+
 }
 
 @media (max-width: 665px) {
-
-
     .about-content h2 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .name {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
-    .about-container p {
-        font-size: 0.8rem;
-    }
 
     .about-content {
-        padding: 1rem;
+        padding: 2rem;
         padding-left: 1.8rem;
         padding-right: 1.8rem;
         padding-bottom: 3.2rem;
@@ -922,8 +919,9 @@ button:hover {
 
     .about-container p {
         padding: 0;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
+
 
 }
 
@@ -950,7 +948,7 @@ button:hover {
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 391px){
     .chatbox {
         flex-direction: column;
         transform: scale(0.5);
@@ -963,6 +961,17 @@ button:hover {
     }
 
     .text {
-        margin-top: 3%;
+        align-self: center;
+        font-size: 1.8rem;
     }
+
+    .about-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .about-container p {
+        font-size: 1rem;
+    }
+
+
 }
