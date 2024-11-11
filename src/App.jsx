@@ -89,7 +89,7 @@ export default function App() {
             <h2>About Me</h2>
             <div className='about-container'>
               <img src={lily} className='about-item' alt="Picture " />
-              <p className='about-item'>Hi! I'm Lily, a third year computer science student at Western University. I’m all about solving problems, learning new things, and applying what I know to real projects. Always looking for opportunities to grow and challenge myself! ✧</p>
+              <p className='about-item'>Hi! I'm Lily, a third year computer science student at Western University. I’m all about solving problems, learning new things, and applying what I know to real projects. Always looking for opportunities to grow and challenge myself! <br /> <br /> Feel free to reach out – I don't bite... ✧</p>
             </div>
           </div>
         </div>
