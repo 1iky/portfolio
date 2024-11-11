@@ -720,6 +720,14 @@ button:hover {
         height: 31px;
     }
 
+    .about:hover {
+        border-radius: 0px;
+    }
+    
+    .projects:hover {
+        border-radius: 0px;
+    }
+
     .button-text {
         font-size: 1rem;
     }
