@@ -570,6 +570,7 @@ button:hover {
     
 
 @media (max-width: 1500px) {
+    
     .chatbox-text {
         transform: scale(1);
         margin-top: 13%;
@@ -779,6 +780,12 @@ button:hover {
         font-size: 1.2rem;
     }
 
+}
+
+@media (max-width: 850px) {
+    .about-container img {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
