@@ -993,6 +993,13 @@ button:hover {
         font-size: 1rem;
     }
 
+    .about-content {
+        padding: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
 
 
 }
