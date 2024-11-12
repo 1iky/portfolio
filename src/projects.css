@@ -37,7 +37,7 @@
 .project {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);/* Adjust image width as needed */
-    height: 50vh;
+    height: 45vh;
     gap: 35px;
     padding: 24px;
     border-radius: 20px;
@@ -49,6 +49,11 @@
     margin-top: 15px;
     width: 100%;
     aspect-ratio: 16/9; 
+
+    /* center img */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-image img {
@@ -93,7 +98,7 @@
     margin: 0;
     line-height: 1.5;
     margin-top: 8px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 
@@ -125,3 +130,130 @@
     gap: 15px;
 }
 
+
+@media (min-width: 1920px) {
+    .project-list-title {
+        font-size: 2.5rem;
+    }
+
+    .project {
+        height: 50vh;
+    }
+
+    .project-title {
+        font-size: 2.5rem;
+    }
+
+    .project-tags {
+        gap: 20px;
+    }
+
+    .tag {
+        padding: 2px 15px;
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        font-size: 1.8rem;
+    }
+
+    .project-button {
+        padding: 6px 20px;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 1440px) {
+    .project-list-title {
+        font-size: 1.8rem;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+        height: auto; 
+        gap: 20px; 
+    }
+
+    .project-image {
+        margin-top: 0; 
+    }
+
+    .project-title {
+        font-size: 2rem; 
+    }
+
+    .tag {
+        padding: 2px 10px; 
+        font-size: 1.2rem; 
+    }
+
+    .project-description {
+        font-size: 1.5rem; 
+    }
+    
+    .project-button {
+        padding: 4px 12px; 
+        font-size: 1.2rem; 
+    }
+}
+
+@media (max-width: 1250px) {
+    .title-box-inner {
+        width: 80%;
+    }
+
+    .projects-list {
+        width: 80%;
+    }
+}
+
+@media (max-width: 950px) {
+    .project-list-title {
+        font-size: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .tag {
+        padding: 2px 8px;
+        font-size: 1rem;
+    }
+
+    .project-description {
+        font-size: 1.3rem;
+    }
+
+    .project-button {
+        padding: 4px 10px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .project-list-title {
+        font-size: 1.3rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    .tag {
+        padding: 2px 6px;
+        font-size: 0.9rem;
+    }
+    
+    .project-description {
+        font-size: 1.1rem;
+    }
+
+    .project-button {
+        padding: 4px 8px;
+        font-size: 0.9rem;
+    }
+}
