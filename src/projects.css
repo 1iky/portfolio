@@ -37,7 +37,7 @@
 .project {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);/* Adjust image width as needed */
-    height: 45vh;
+    height: auto;
     gap: 35px;
     padding: 24px;
     border-radius: 20px;
@@ -137,7 +137,7 @@
     }
 
     .project {
-        height: 50vh;
+        height: auto;
     }
 
     .project-title {
