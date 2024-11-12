@@ -1,6 +1,6 @@
 import React from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import './style.css';
+import './index.css';
 
 function Animation() {
     return (
