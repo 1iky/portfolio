@@ -786,6 +786,10 @@ button:hover {
     .about-container img {
         display: none;
     }
+
+    .about-container p {
+        padding: 0;
+    }
 }
 
 @media (max-width: 768px) {
