@@ -101,7 +101,7 @@ export default function Projects() {
                             </p>
                             <div className='project-links'>
                                 <a href='https://wiggletale.com' target='_blank' rel='noreferrer' className='project-button'>
-                                    Visit Site ✦
+                                    Visit Site 
                                 </a>
                             </div>
                         </div>
@@ -126,7 +126,7 @@ export default function Projects() {
                             </p>
                             <div className='project-links'>
                                 <a href='https://www.figma.com/proto/5h7Xu0VANvsjymbNvfwDsf/Better-Together?page-id=0%3A1&node-id=1-32&node-type=canvas&viewport=425%2C259%2C0.19&t=2qShZp2qcJovtJr8-1&scaling=min-zoom&content-scaling=fixed' target='_blank' rel='noreferrer' className='project-button'>
-                                    Visit Figma ✦
+                                    Visit Figma 
                                 </a>
                             </div>
                         </div>
@@ -150,10 +150,10 @@ export default function Projects() {
                             </p>
                             <div className='project-links'>
                                 <a href='https://lilyso.netlify.app/' target='_blank' rel='noreferrer' className='project-button'>
-                                    Visit Site ✦
+                                    Visit Site 
                                 </a>
                                 <a href='https://github.com/1iky/portfolio' target='_blank' rel='noreferrer' className='project-button'>
-                                    Visit github ✦
+                                    Visit github 
                                 </a>
                             </div>
                         </div>
@@ -178,7 +178,7 @@ export default function Projects() {
                             </p>
                             <div className='project-links'>
                                 <a href='https://github.com/1iky/Colourful-Critter-Quest' target='_blank' rel='noreferrer' className='project-button'>
-                                    Visit github ✦
+                                    Visit github 
                                 </a>
                             </div>
                         </div>
@@ -203,10 +203,10 @@ export default function Projects() {
                             </p>
                             <div className='project-links'>
                                 <a href='https://github.com/1iky/ThoughtfulTies' target='_blank' rel='noreferrer' className='project-button'>
-                                    Visit github ✦
+                                    Visit github 
                                 </a>
                                 <a href='https://devpost.com/software/thoughtful-ties' target='_blank' rel='noreferrer' className='project-button'>
-                                    Visit devpost ✦
+                                    Visit devpost 
                                 </a>
                             </div>
                         </div>
