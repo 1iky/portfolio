@@ -80,7 +80,7 @@ export default function Projects() {
     
             <div className='projects-container'>
                 <div className='projects-list'>
-                    {/* Project1 Wiggletale*/}
+                    {/* Project 1 Wiggletale*/}
                     <div className='project'>
                         <div className='project-image'>
                             <img src={wiggletale} alt='project-image'/>
@@ -97,7 +97,9 @@ export default function Projects() {
                                 </div>
                             </div>
                             <p className='project-description'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro minima molestias ullam exercitationem rerum, ipsum ut, velit, ipsa modi sunt neque praesentium atque dolores ad! Totam labore autem molestias.
+                                ✦ Designed and developed a complete Shopify website, including custom branding and feature implementation to enhance user experience and align with the brand's identity.
+                                <br></br>
+                                ✦ This project involved crafting a unique logo, customizing theme elements, optimizing navigation, and integrating essential Shopify tools for a seamless shopping experience.
                             </p>
                             <div className='project-links'>
                                 <a href='https://wiggletale.com' target='_blank' rel='noreferrer' className='project-button'>
@@ -106,7 +108,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </div>
-                    {/* Project2 UXL Better Together*/}
+                    {/* Project 2 UXL Better Together*/}
                     <div className='project'>
                         <div className='project-image'>
                             <img src={bettertogether} alt='project-image'/>
@@ -122,7 +124,9 @@ export default function Projects() {
                                 </div>
                             </div>
                             <p className='project-description'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro minima molestias ullam exercitationem rerum, ipsum ut, velit, ipsa modi sunt neque praesentium atque dolores ad! Totam labore autem molestias.
+                                ✦ Winner of the UXL Choice Award at the 2024 UX Laurier Designathon
+                                <br></br>
+                                ✦ Figma prototype of a mobile app that connects families together through daily updates, shared photos, and marking hotspot locations.
                             </p>
                             <div className='project-links'>
                                 <a href='https://www.figma.com/proto/5h7Xu0VANvsjymbNvfwDsf/Better-Together?page-id=0%3A1&node-id=1-32&node-type=canvas&viewport=425%2C259%2C0.19&t=2qShZp2qcJovtJr8-1&scaling=min-zoom&content-scaling=fixed' target='_blank' rel='noreferrer' className='project-button'>
@@ -131,7 +135,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </div>
-                    {/* Project3 Personal Website*/}
+                    {/* Project 3 Personal Website*/}
                     <div className='project'>
                         <div className='project-image'>
                             <img src={portfolio} alt='project-image'/>
@@ -146,7 +150,7 @@ export default function Projects() {
                                 </div>
                             </div>
                             <p className='project-description'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro minima molestias ullam exercitationem rerum, ipsum ut, velit, ipsa modi sunt neque praesentium atque dolores ad! Totam labore autem molestias.
+                                ✦ Personal portfolio website showcasing my projects and skills!
                             </p>
                             <div className='project-links'>
                                 <a href='https://lilyso.netlify.app/' target='_blank' rel='noreferrer' className='project-button'>
@@ -158,7 +162,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </div>
-                    {/* Project4 Colourful Critter Quest*/}
+                    {/* Project 4 Colourful Critter Quest*/}
                     <div className='project'>
                         <div className='project-image'>
                             <img src={colourfulcritterquest} alt='project-image'/>
@@ -174,7 +178,7 @@ export default function Projects() {
                                 </div>
                             </div>
                             <p className='project-description'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro minima molestias ullam exercitationem rerum, ipsum ut, velit, ipsa modi sunt neque praesentium atque dolores ad! Totam labore autem molestias.
+                                ✦ An educational game designed for children that helps them recognize and spell animals, understand basic colour theory, and practice simple mathematical calculations.
                             </p>
                             <div className='project-links'>
                                 <a href='https://github.com/1iky/Colourful-Critter-Quest' target='_blank' rel='noreferrer' className='project-button'>
@@ -199,7 +203,9 @@ export default function Projects() {
                                 </div>
                             </div>
                             <p className='project-description'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro minima molestias ullam exercitationem rerum, ipsum ut, velit, ipsa modi sunt neque praesentium atque dolores ad! Totam labore autem molestias.
+                                ✦ Thoughtful Ties is a platform that connects the elderly with one another
+                                <br></br>
+                                ✦ Designed and developed the frontend layout 
                             </p>
                             <div className='project-links'>
                                 <a href='https://github.com/1iky/ThoughtfulTies' target='_blank' rel='noreferrer' className='project-button'>
