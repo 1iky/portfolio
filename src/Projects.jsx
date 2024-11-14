@@ -178,7 +178,7 @@ export default function Projects() {
                                 </div>
                             </div>
                             <p className='project-description'>
-                                ✦ An educational game designed for children that helps them recognize and spell animals, understand basic colour theory, and practice simple mathematical calculations.
+                                ✦ An educational children's game created for CS2212 that helps kids recognize and spell animals, understand basic colour theory, and practice simple mathematical calculations.
                             </p>
                             <div className='project-links'>
                                 <a href='https://github.com/1iky/Colourful-Critter-Quest' target='_blank' rel='noreferrer' className='project-button'>
