@@ -109,7 +109,7 @@ export default function Projects() {
                                 
                             </p>
                             <div className='project-links'>
-                                <a href='https://github.com/1iky/portfolio' target='_blank' rel='noreferrer' className='project-button'>
+                                <a href='https://github.com/1iky/Fintelligent' target='_blank' rel='noreferrer' className='project-button'>
                                     Visit github 
                                 </a>
                             </div>
@@ -138,7 +138,9 @@ export default function Projects() {
                                 ✦ Implemented Object-Oriented Programming (OOP) and the MVC design pattern for maintainable and scalable code.
                             </p>
                             <div className='project-links'>
-                                
+                            <a href='https://github.com/1iky/Alignify' target='_blank' rel='noreferrer' className='project-button'>
+                                    Visit github 
+                                </a>
                             </div>
                         </div>
                     </div>
