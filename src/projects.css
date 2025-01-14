@@ -83,7 +83,9 @@
 
 .project-tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
+    max-width: 400px;
 }
 
 .tag {
